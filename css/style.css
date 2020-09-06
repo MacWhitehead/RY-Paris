@@ -3,7 +3,7 @@ body {
     margin: auto;
     font-size: 24px;
 }
-header {
+header, footer {
     background-color: #E69D33;
     padding: 5px 35px 0px 35px;
 }
@@ -12,6 +12,12 @@ header {
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+}
+.flex-col {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center; 
 }
 .ry-paris {
     flex-flow: column;
@@ -23,12 +29,12 @@ header {
     width: 300px;
     position: relative;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .right-nav {
       display: none;
     }
   }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1001px) {
     .right-nav {
         justify-content: end;
         align-items: start;
@@ -51,7 +57,7 @@ header {
 .start-week {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
-    height: 700px;
+    height: 600px;
     position: relative;
 }
 .start-week-text {
@@ -66,4 +72,67 @@ header {
     font-family: Helvetica;
     padding: 5px;
     font-size: 40px;
+}
+.everyday, .recipes-week, .travel-guide {
+    padding: 50px 120px;
+}
+.everyday h1, .recipes-week h1, .travel-guide h1 {
+    font-weight: 900;
+}
+.everyday p, .recipes-week p, .travel-guide p {
+    font-size: 32px;
+}
+.breakfast, .lunch, .dinner, .sandwiches, .pizza, .city-guides {
+    background-size: cover;
+    align-items: center;
+    width: 28%;
+    height: 250px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+.breakfast {
+    background-image: url("../images/breakfast-ideas.jpg");
+}
+.lunch {
+    background-image: url("../images/vegetarian-ideas.jpg");
+}
+.dinner {
+    background-image: url("../images/cold-weather-dinners.jpeg");
+}
+.recipes-week {
+    background-color: #DADFEA;
+}
+.fajita, .muffin, .eggplant, .chicken-thigh {
+    background-size: cover;
+    width: 22%;
+    height: 200px;
+    padding: 10px;
+}
+.fajita {
+    background-image: url("../images/fajita-peppers.jpeg");
+}
+.muffin {
+    background-image: url("../images/muffins.jpeg");
+}
+.eggplant {
+    background-image: url("../images/eggplant-parmesan.jpg");
+}
+.chicken-thigh {
+    background-image: url("../images/teriyaki-chicken.jpeg");
+}
+.sandwiches, .pizza, .city-guides {
+    border: solid 8px #DADFEA;
+}
+.sandwiches {
+    background-image: url("../images/burger.jpg");
+}
+.pizza {
+    background-image: url("../images/pizza.jpeg");
+}
+.city-guides {
+    background-image: url("../images/city-guides.jpg");
+}
+footer {
+    height: 120px;
 }
