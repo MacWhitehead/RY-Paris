@@ -7,17 +7,37 @@ header, footer {
     background-color: #E69D33;
     padding: 5px 35px 0px 35px;
 }
+footer {
+    height: 120px;
+}
 .flex-row {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 .flex-col {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center; 
+}
+.align-center {
+    align-items: center;
+}
+ol {
+    margin: 0;
+    padding: 0;
+}
+.grid-column-three {
+    display: grid;
+    grid-template-columns: Auto Auto Auto;
+    grid-template-rows: Auto Auto Auto;
+}
+.grid-column-four {
+    display: grid;
+    grid-template-columns: Auto Auto Auto Auto;
+    grid-template-rows: Auto Auto Auto Auto;
 }
 .ry-paris {
     flex-flow: column;
@@ -54,13 +74,18 @@ header, footer {
     padding: 10px;
     margin: 5px;
 }
-.start-week {
-    background-image: url("../images/hero-image.jpg");
+.hamburger, .start-week {
     background-size: cover;
-    height: 600px;
+    height: 580px;
     position: relative;
 }
-.start-week-text {
+.start-week {
+    background-image: url("../images/hero-image.jpg");
+}
+.hamburger {
+    background-image: url("../images/bengal-burger.jpg");
+}
+.start-week-text, .hamburger-text {
     text-align: center;
     position: absolute;
     top: 70%;
@@ -84,12 +109,19 @@ header, footer {
 }
 .breakfast, .lunch, .dinner, .sandwiches, .pizza, .city-guides {
     background-size: cover;
-    align-items: center;
-    width: 28%;
+    background-position: center;
+    width: 350px;
     height: 250px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     margin: auto;
+}
+.photo-text {
+    text-align: center;
+    font-weight: 700;
+    background-color: white;
+    padding: 12px 0px;
+    width: auto;
 }
 .breakfast {
     background-image: url("../images/breakfast-ideas.jpg");
@@ -100,12 +132,12 @@ header, footer {
 .dinner {
     background-image: url("../images/cold-weather-dinners.jpeg");
 }
-.recipes-week {
+.recipes-week, .cooking-info {
     background-color: #DADFEA;
 }
 .fajita, .muffin, .eggplant, .chicken-thigh {
     background-size: cover;
-    width: 22%;
+    width: 250px;
     height: 200px;
     padding: 10px;
 }
@@ -133,6 +165,78 @@ header, footer {
 .city-guides {
     background-image: url("../images/city-guides.jpg");
 }
-footer {
-    height: 120px;
+.cooking-info {
+    padding: 5px 110px;
+}
+.time, .ingredients h1, .ingredients h4, .directions h1, .directions h4 {
+    margin: 0px;
+    padding: 0px;
+}
+.cooking-description {
+    width: 1000px;
+    text-align: center;
+}
+.cooking-description div {
+    text-align: left;
+    margin: 10px 0px;
+}
+.cooking-description span {
+    font-weight: 900;
+}
+.recipe-title {
+    text-align: center;
+    font-weight: 900;
+}
+.recipe-title h1 {
+    text-transform: uppercase;
+    margin: 100px 0px 0px 0px;
+}
+.checked {
+    color: #A63223;
+  }
+  .stars, .stars p, .buttons {
+    justify-content: center;
+    margin: 10px 0px;
+}
+.save-recipe {
+    background-color: #A63223;
+    color: white;
+    padding: 8px;
+    font-size: 18px;
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 10px 20px 0px;
+}
+.print-page {
+    border-radius: 50%;
+    border: solid 1px black;
+    height: 35px;
+    width: 35px;
+    margin: 0px 0px 20px 5px;
+}
+.print-page img {
+    height: 25px;
+    width: 25px;
+    padding: 5px 0px;
+}
+.reviews {
+    padding: 0px 10px;
+}
+.quote {
+    background-color: #EEF0F4;
+    text-align: center;
+    margin: auto;
+    padding: 30px 170px;
+    font-size: 32px;
+    width: 950px;
+}
+.how-to {
+    width: 950px;
+}
+.ingredients, .directions {
+    text-align: center;
+    width: 50%;
 }
