@@ -253,6 +253,7 @@ ol, ul {
 }
 .how-to ul, .how-to ol {
     margin: 20px;
+    list-style-type: circle black;
 }
 .ingredients, .directions {
     width: 50%;
@@ -276,4 +277,7 @@ ol, ul {
     width: 500px;
     margin: 20px auto;
     margin-bottom: 50px;
+}
+iframe {
+    border: none;
 }
