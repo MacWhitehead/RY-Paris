@@ -259,19 +259,25 @@ ol, ul {
     width: 50%;
 }
 .email-subscription {
-    width: 900px;
-    height: 70px;
+    width: 1100px;
+    height: 100px;
     margin: auto;
     padding: 10px 40px 5px 40px;
     background-color: #DADFEA;
     align-items: center;
+    justify-content: center;
     border: solid 1px black;
 }
 .submit {
     width: 70px;
     height: 30px;
     padding: 0px;
+    margin: 20px 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.content-ideas {
+    max-width: 200px;
+    max-height: 90px;
 }
 .gordan-ram {
     width: 500px;
